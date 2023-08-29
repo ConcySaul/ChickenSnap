@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types"
 
 const ChickenForm = ({isEdit=false, chicken = {}, onCreate = ()=>{}, onDelete = ()=>{}, onUpdate = () => {}, onClose= () =>{}}) => {
     const [name, setName] = useState(undefined);
@@ -110,5 +111,14 @@ const ChickenForm = ({isEdit=false, chicken = {}, onCreate = ()=>{}, onDelete = 
         </div>
     )
 };
+
+ChickenForm.PropTypes = {
+    isEdit: PropTypes.bool,
+    chicken: PropTypes.object,
+    onCreate: PropTypes.func,
+    onDelete: PropTypes.func,
+    onUpdate: PropTypes.func,
+    onClose: PropTypes.func
+}
 
 export default ChickenForm;

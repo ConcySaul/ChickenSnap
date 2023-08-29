@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useState, useCallback } from 'react';
 import '../app/globals.css';
 import ChickenForm from '../app/ChickenForm';
-
 const { default: Head } = require('next/head');
 
 function Index() {
