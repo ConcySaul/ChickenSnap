@@ -31,6 +31,13 @@ POST -> http://localhost:3000/chicken : create a new chicken, name and weight ar
 
 DELETE -> http://localhost:3000/chicken?id=exempleId15672 : delete a chicken passing the id in the URL. Replace exempleId15672 with a valid id.
 
+For every PUT and PATCH, you need to provide the id like :
+```c
+{
+    id: String
+}
+```
+
 PUT -> http://localhost:3000/chicken : Update the chicken. You need to provide every information AND the id.
 
 PATCH -> http://localhost:3000/chicken : Update the chicken partially. You need to provide the id.
