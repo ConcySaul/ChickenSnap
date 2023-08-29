@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import connect from '../../../../../lib/mongodb';
 import Chicken from '../../../../../models/chicken';
 
-export default async function PATCH(request, { params }) {
+export async function PATCH(request, { params }) {
   try {
     const { id } = params;
     await connect();
