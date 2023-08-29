@@ -3,7 +3,7 @@
 First, run the development server:
 
 ```bash
-npm install next (if you don\'t have nextjs)
+npm install next
 npm run start:all:dev (docker-compose up -d && npm run dev)
 npm run build:start (docker-compose up -d && npm run build && npm run start)
 ```
