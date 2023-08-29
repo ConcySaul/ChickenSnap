@@ -3,7 +3,7 @@ import connect from '../../../../lib/mongodb';
 import Chicken from '../../../../models/chicken';
 
 // this route handler allows us to handle a PATCH request. It increments steps by 1 on EVERY single chicken
-export default async function PATCH() {
+export async function PATCH() {
   try {
     await connect();
     await Chicken.updateMany({}, { $inc: { steps: 1 } });
